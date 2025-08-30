@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="fa" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>استعلام مدرک تحصیلی</title>
+<style>
+:root{--blue:#1e62b7;--dark:#0f2a4d;--green:#2aa744;--warn:#ffefe6;--danger:#e53935;--muted:#6b7280;--border:#d1d5db;--bg:#f3f4f6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:tahoma,IRANSans,Arial,sans-serif;color:#111}
+.topbar{background:#fff;border-bottom:1px solid var(--border);padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo img{height:50px}
+.logo .brand{font-weight:700;color:var(--dark)}
+.wrap{max-width:1100px;margin:20px auto;padding:0 16px}
+.card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:16px}
+.row{display:flex;gap:16px;align-items:flex-start}
+.qr{width:120px;height:120px;border:1px solid var(--border);border-radius:8px;overflow:hidden;background:#fff}
+.badge{display:inline-block;background:#e8f1ff;color:var(--blue);border:1px solid #cde2ff;border-radius:999px;padding:8px 12px;font-weight:700;margin-top:8px}
+.btn-print{background:#22c55e;color:#fff;border:none;border-radius:8px;padding:10px 16px;cursor:pointer}
+.alert{background:var(--warn);border:1px solid #ffc9a6;border-right:5px solid #ff8a3d;border-radius:8px;padding:12px;color:#7a3e00;margin-top:10px}
+.section-title{background:var(--blue);color:#fff;display:inline-block;padding:8px 14px;border-radius:8px;margin:14px 0;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.field{display:flex;flex-direction:column;gap:6px}
+.label{font-size:12px;color:var(--muted)}
+.input{background:#f9fafb;border:1px solid var(--border);border-radius:8px;padding:10px 12px}
+.table{width:100%;border-collapse:separate;border-spacing:0 10px}
+td{vertical-align:top}
+h1{font-size:18px;margin:0 0 6px 0;color:var(--dark)}
+.small{font-size:12px;color:var(--muted)}
+.footer-space{height:24px}
+@media print{.topbar,.btn-print{display:none} body{background:#fff} .card{border:none} .section-title{border-radius:0}}
+</style>
+</head><body>
+<div class="topbar">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div class="qr"><img src="qr.png" alt="QR" style="width:100%;height:100%;object-fit:contain"></div>
+    <span class="badge">کد پیگیری: 10fa51dab7</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:16px">
+    <button class="btn-print" onclick="window.print()">چاپ</button>
+    <div class="logo">
+      <img src="logo.png" alt="لوگو">
+      <span class="brand">سامانه استعلام مدرک تحصیلی</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="card">
+    <div class="row">
+      <div style="flex:1">
+        <h1>وزارت علوم، تحقیقات و فناوری</h1>
+        <div class="small">استعلام مدرک تحصیلی</div>
+        <div class="alert">در صورت مشاهده مغایرت در اطلاعات یا عدم وجود اطلاعات مقاطع، به مراجع مربوطه اعلام نمایید.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="section-title">مشخصات فردی</span>
+    <div class="grid">
+      <div class="field"><div class="label">نام</div><div class="input">جلال</div></div>
+      <div class="field"><div class="label">نام خانوادگی</div><div class="input">مانی</div></div>
+      <div class="field"><div class="label">نام پدر</div><div class="input">حسن</div></div>
+      <div class="field"><div class="label">کد ملی</div><div class="input">4889430911</div></div>
+      <div class="field"><div class="label">شماره شناسنامه</div><div class="input">193</div></div>
+      <div class="field"><div class="label">تاریخ تولد</div><div class="input">1357/05/24</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="section-title">کارشناسی ارشد ناپیوسته</span>
+    <table class="table">
+      <tr><td style="width:220px"><div class="label">دانشگاه</div><div class="input">علوم و تحقیقات تهران</div></td>
+          <td><div class="label">رشته / گرایش</div><div class="input">مدیریت فناوری اطلاعات - گرایش کسب‌وکار الکترونیکی</div></td></tr>
+      <tr><td><div class="label">نوع دوره</div><div class="input">دانشگاه آزاد اسلامی</div></td>
+          <td><div class="label">معدل</div><div class="input">18.50</div></td></tr>
+      <tr><td><div class="label">تاریخ شروع تحصیل</div><div class="input">1396/07/01</div></td>
+          <td><div class="label">تاریخ فراغت از تحصیل</div><div class="input">1398/04/15</div></td></tr>
+      <tr><td><div class="label">وضعیت تحصیلی</div><div class="input">فارغ‌التحصیل</div></td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <span class="section-title">کارشناسی پیوسته</span>
+    <table class="table">
+      <tr><td style="width:220px"><div class="label">دانشگاه</div><div class="input">دانشگاه گیلان</div></td>
+          <td><div class="label">رشته / گرایش</div><div class="input">مهندسی کامپیوتر - گرایش سخت‌افزار</div></td></tr>
+      <tr><td><div class="label">نوع دوره</div><div class="input">روزانه</div></td>
+          <td><div class="label">معدل</div><div class="input">17.56</div></td></tr>
+      <tr><td><div class="label">تاریخ شروع تحصیل</div><div class="input">1376/07/01</div></td>
+          <td><div class="label">تاریخ فراغت از تحصیل</div><div class="input">1380/11/05</div></td></tr>
+      <tr><td><div class="label">وضعیت تحصیلی</div><div class="input">فارغ‌التحصیل</div></td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="footer-space"></div>
+</div>
+</body></html>
